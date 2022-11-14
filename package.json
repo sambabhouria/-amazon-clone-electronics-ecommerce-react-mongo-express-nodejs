@@ -1,6 +1,7 @@
 {
   "name": "amazone-clone",
   "version": "1.0.0",
+  "type": "module",
   "description": "This website resembles a real store and you can add products to your cart and pay for them",
   "main": "index.js",
   "scripts": {

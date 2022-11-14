@@ -14,6 +14,18 @@ departmentRouter.post('/',
   })
 );
 
+departmentRouter.get('/seed',
+  expressAsyncHandler(async (req, res) => {
+    console.log('je suis bien dans le get department')
+    //  await Department.remove({});
+    const createdDepartements = await Department.insertMany(data.departments);
+    console.log('createdDepartements', createdDepartements)
+    res.send({
+      message: "Data Base filled"
+     });
+  })
+);
+
 
 departmentRouter.post('/add',
   expressAsyncHandler(async (req, res) =>{

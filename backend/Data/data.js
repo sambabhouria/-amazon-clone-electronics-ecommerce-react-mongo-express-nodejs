@@ -1,4 +1,6 @@
 import bcrypt from "bcryptjs";
+import mongoose from 'mongoose';
+// var ObjectID = mongoose.ObjectID;
 
 const data={
 
@@ -18,48 +20,37 @@ const data={
       ],
     departments:[
         {
-            _id:'1',
             name:'Syska',
-            category:'Electronics',
-            description:'Good Product',
             image:'https://s16458.pcdn.co/wp-content/uploads/2019/11/Anker-Charger-250x300.jpg'
         },
         {
-            _id:'2',
             name:'Smartwatches',
             image:'https://cf1.s3.souqcdn.com/item/2020/10/14/13/19/07/98/9/item_L_131907989_d72314784445f.jpg'
         },
         {
-            _id:'3',
             name:'Laptops',
             image:'https://images-na.ssl-images-amazon.com/images/I/91MW2X7lrfL.__AC_SX300_SY300_QL70_ML2_.jpg'
         },
         {
-            _id:'4',
             name:'Smartphones',
             image:'https://s3b.cashify.in/gpro/uploads/2020/10/13211658/iphone-12-pro-family-250x300.jpeg'
         },
         {
-            _id:'5',
             name:'Clothes',
             image:'http://www.countryboylifestyle.com/UserPanel/UserPanel/Uploads/432637553103879714328_small_MI.jpg'
         },
         {
-            _id:'6',
             name:'SmartTv',
             image:'http://www.krisons.com/product_images/KR-32-LED-TV-T.jpg'
         },
         {
-            _id:'7',
             name:'Computers',
             image:'https://aigostore.b-cdn.net/wp-content/uploads/2020/10/HTB1F4_vclCw3KVjSZR0q6zcUpXau-250x300.jpg'
         },
         {
-            _id:'8',
             name:'Shoes',
             image:'http://tirupurbrands.in/wp-content/uploads/2018/07/5-250x300.jpg'
         },
-        
     ],
     phones:[
         {
@@ -106,11 +97,11 @@ const data={
     ],
     products:[
         {
-            
             name:'MYao Magnetic Wireless Power Bank, 15W Wireless Portable Phone Charger 10000mAh, 4 Output PD 20W',
             image:'https://s.alicdn.com/@sc04/kf/Hdcb7ea9a3c8b4767bc46f8fde3a99ad9u.png_300x300.png',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'49.99',
             numReviews:'237',
@@ -118,11 +109,12 @@ const data={
             countInStock:19
         },
         {
-            
+
             name:'ADCB POW1 - Emergency USB Battery Powered Power Bank Compact Portable 4 AA Batteries Ideal',
             image:'https://gardibazar.com/wp-content/uploads/2019/04/full_1301-250x300.jpg',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'24.99',
             numReviews:'68',
@@ -130,11 +122,11 @@ const data={
             countInStock:0
         },
         {
-            
             name:'mophie snap+ juice pack mini - Magnetic and portable wireless charger containing a 5,000mAh internal battery. - Black',
             image:'https://20fd661yccar325znz1e9bdl-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/anker-20100mah-powercore-high-capacity-power-bank-power-bank-250x300.jpg',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'18.56',
             numReviews:'492',
@@ -147,6 +139,7 @@ const data={
             image:'https://images-eu.ssl-images-amazon.com/images/I/3173lBxbF3L._SX300_SY300_QL70_ML2_.jpg',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'32.27',
             numReviews:'1354',
@@ -159,6 +152,7 @@ const data={
             image:'https://s.alicdn.com/@sc04/kf/Hdcb7ea9a3c8b4767bc46f8fde3a99ad9u.png_300x300.png',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'149.98',
             numReviews:'674',
@@ -172,6 +166,7 @@ const data={
             brand:'Syska',
             category:'Electronics',
             description:'Good Product',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             price:'312.95',
             numReviews:'4859',
             rating:4.5,
@@ -183,6 +178,7 @@ const data={
             image:'https://images-na.ssl-images-amazon.com/images/I/81WI54kMFoL.__AC_SX300_SY300_QL70_ML2_.jpg',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'499.99',
             numReviews:'4',
@@ -195,6 +191,7 @@ const data={
             image:'https://www.cellcom.com/resources/phones/5706_JBL_Flip5_big.jpg',
             brand:'Syska',
             category:'Electronics',
+            department: new mongoose.Types.ObjectId('637236c5b8b83019ee8043de'),
             description:'Good Product',
             price:'278.99',
             numReviews:'912',

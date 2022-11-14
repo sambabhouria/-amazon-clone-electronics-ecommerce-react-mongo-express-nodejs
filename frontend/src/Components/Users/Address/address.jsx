@@ -81,7 +81,7 @@ function Address() {
                             <div className="formDivTop">
                                 <label htmlFor="country" className='newAddressLabel labelCountry'>Country/Region</label>
                                 <select name="country" id="" className='selectCountry' value={country} onChange={(e) => setCountry(e.target.value)}>
-                                    <option value="India" className='countryOption'>India</option>
+                                    <option value="France" className='countryOption'>France</option>
                                 </select>
                             </div>
                             <div className="formDiv">

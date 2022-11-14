@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./AddProduct.css";
 import { useNavigate, Link } from "react-router-dom";
-import random from "../../../../node_modules/random/dist/cjs/index";
+import random from 'random'
 
 function AddProduct() {
   const navigate = useNavigate();
